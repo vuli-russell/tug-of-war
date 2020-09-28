@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tug Of War</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee+Shade">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+</head>
+<body>
+
+    <h1>tug of war</h1>
+
+    <canvas></canvas>
+
+    <!-- Controls -->
+    <!-- new game -->
+    <div class="new-game">
+        <div class="new-game__player-options">
+            <div>
+                <h2>Player 1</h2>
+                <label for="p-one-name"></label>Name:</label>
+                <input type="text" name="p-one-name" placeholder="player 1">
+            </div>
+
+            <div>
+                <h2>Player 2</h2>           
+                <label for="p-two-name">Name:</label>
+                <input type="text" name="p-two-name" placeholder="player 2">
+            </div>
+        </div>
+
+        <div class="new-game__game-options">
+            <h2>Input Mode</h2>
+            <div>
+                <label for="one-button">One Button</label>
+                <input type="radio" name="input-mode" id="one-button">
+                <label for="multi-button">Multi Button</label>
+                <input type="radio" name="input-mode" id="multi-button">
+            </div>
+            <h2>Movement Mode</h2>
+            <div>
+                <label for="jump">Input changes Position</label>
+                <input type="radio" name="movement-mode" id="jump">
+                <label for="speed">Input changes Speed</label>
+                <input type="radio" name="movement-mode" id="speed">
+            </div>
+        </div>
+
+        <button class="new-game__button--start" >start game</button>
+    </div>
+
+    <!-- end game screen -->
+    <div class = "end-game">
+        <h2 class = end-game__heading>winner text here</h2>
+        <h2 class = end-game__heading>score text here</h2>
+        <button class = end-game__button--start>next round</button>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>

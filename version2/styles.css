@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand";
+}
+
+body canvas {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  background-color: deepskyblue;
+}
+body h1 {
+  margin: 20px;
+  text-align: center;
+  font-family: "Bungee Shade";
+}
+body .new-game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+}
+body .new-game__player-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 20px;
+  padding: 20px;
+}
+body .new-game__game-options {
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+body .new-game__button--start {
+  font-size: 20px;
+}
+body .end-game {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+body .end-game__heading {
+  text-align: center;
+  margin: 20px;
+}
+body .end-game__button--start {
+  font-size: 20px;
+}
